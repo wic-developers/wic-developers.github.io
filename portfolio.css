@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: 'SF';
+    src: url('Fonts/SF-Pro.ttf');
+}
+
+body {
+    background-color: #151315;
+    font-family: 'SF', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+
+/* Nav Bar */
+.nav-bar {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar img {
+    width: auto;
+    height: 120px;
+}
+
+.nav-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    padding-left: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #f05a27;
+}
+
+/* Landing Img */
+.title{
+    text-align: center;
+    margin: 0;
+    margin: 50px;
+    font-size: 100px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.banner-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+  
+.banner {
+    display: block;
+    margin: 50px auto;
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+  
+  
+/* Overview */
+
+.overview{
+    display: flex;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    background-color: #1d1d1d;
+}
+
+.overview h4{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.overview .about{
+    display: grid;
+}
+
+.overview .about p{
+    font-size: 18px;
+    max-width: 500px;
+}
+
+/* Highlights */
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+  
+.landing {
+    margin-right: 50px; 
+}
+  
+.landing:last-child {
+    margin-right: 0; 
+}
+  
+.highlights img {
+    border-radius: 25px;
+    height: 370px;
+    width: 645px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.highlights img:hover{
+    transform: scale(1.02);
+}
+
+.highlights h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+hr{
+    width: 30%;
+    float: top;
+    margin: 50px;
+}
+
+.integrations{
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.integrations h4{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.integrations p{
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+.foot{
+    width: auto;
+    height: 30vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #232323;
+}
+
+.foot h4{
+    font-weight: 400;
+}
+
+.foot a{
+    font-weight: 600;
+}
+
+.foot a:hover{
+    color: #f05a27;
+}
+
+@media screen and (max-width: 850px) {
+
+    body{
+        overflow-x: hidden;
+        position: absolute;
+    }
+    
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nav-bar img{
+        max-width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .nav-bar ul{
+        display: none;
+    }
+
+    /* Banner & Title */
+    .title{
+        font-size: 36px;
+    }
+
+    .banner{
+        max-width: 300px;
+    }
+
+    /* Overview */
+    .overview{
+        display: inline-grid;
+        text-align: left;
+        font-size: 24px;
+        padding: 50px;
+        padding-top: 40px;
+    }
+
+    .overview h4{
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .overview .about h4{
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .overview .about p{
+        font-size: 14px;
+    }
+
+    /* Highlights */
+    .highlights {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .landing,
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .highlights img {
+        height: 220px;
+        max-width: 320px;
+    }
+  
+
+    /* Integrations */
+
+    hr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .integrations{
+        text-align: center;
+    }
+
+    .integrations h4{
+        font-size: 24px;
+    }
+
+    .integrations p{
+        font-size: 14px;
+    }
+    /* Footer */
+
+    .foot{
+        margin-top: 50px;
+        padding-top: 100px;
+        font-size: 24px;
+    }
+    
+}
